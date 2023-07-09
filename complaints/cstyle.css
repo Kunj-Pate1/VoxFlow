@@ -1,0 +1,174 @@
+body{
+  border: 0px;
+  margin: 0%;
+  padding: 0px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+
+.nav {
+  display: flex;
+  flex: 0.02;
+  background-color: #4481eb;
+  justify-content: space-between;
+}
+
+.nav > p{
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 0%;
+  color: #333;
+  padding-left: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hlink{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.logb {
+background-color: #333;
+border: none;
+padding: 10px;
+margin: 12px;
+color: white;
+font-size: 20px;
+width: 100px;
+border-radius: 30px;
+cursor: pointer;
+}
+.logb:hover {
+background-color: #444;
+}
+
+
+/* CSS for the complaint form */
+form {
+    /* max-width: 500px;  */
+    width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .form-container > div {
+      flex: 1 1 100%;
+      margin-right: 0;
+    }
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    /* Adjust the styles for smaller screens */
+    form {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    input,
+    select,
+    textarea {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+/* For other complaint pages */
+
+p1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 900;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Table Styling */
+.com-table {
+  width: 100%;
+  /* border-collapse: collapse; */
+}
+
+.com-table th,
+.com-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.com-table th {
+  font-size: larger;
+}
+
+.com-table th {
+  background-color: #f2f2f2;
+}
+
+.com-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.com-table tbody tr:nth-child(odd) {
+  background-color: #ebebeb;
+}
+
+/* Button Styling For admins only*/
+.ress {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.ress:hover {
+  background-color: #45a049;
+}
+
+.alress {
+  background-color: #373737;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
